@@ -11,7 +11,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use TwoFactorAuthenticatable, HasApiTokens, HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
