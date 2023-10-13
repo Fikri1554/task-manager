@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Laravel\Fortify\LoginViewResponse;
-use Laravel\Fortify\HandlesAuthenticationResponses;
 
 
 class AuthenticatedSessionController extends Controller
