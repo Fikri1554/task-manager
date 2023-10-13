@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\RegisteredUserController;
+use App\Http\Controllers\LayoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,4 @@ use App\Http\Controllers\RegisteredUserController;
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+Route::get('/', [LayoutController::class, 'index'])->name('home');

@@ -12,21 +12,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">Task Manager</a>
-        <div class="jumbotron text-center">
-            <h1 class="display-4">Welcome to Task Manager</h1>
-            <p class="lead">Organize your tasks efficiently with Task Manager.</p>
-            <hr class="my-4">
-            <p>Get started now by logging in or creating an account.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="d-grid gap-2">
-                        <a href="{{ route('login') }}" class="btn btn-primary btn-lg">Login</a>
-                        <a href="{{ route('register') }}" class="btn btn-success btn-lg mt-2">Register</a>
-                    </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Task Manager</h1>
+        <p class="lead">Organize your tasks efficiently with Task Manager.</p>
+        <hr class="my-4">
+        <p>Get started now by logging in or creating an account.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="d-grid gap-2">
+                    <a href="{{ route('login') }}" class="btn btn-primary btn-lg">Login</a>
+                    <a href="{{ route('register') }}" class="btn btn-success btn-lg mt-2">Register</a>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 
     <div class="container mt-4">
         <!-- Konten Aplikasi akan Ditampilkan di Sini -->
