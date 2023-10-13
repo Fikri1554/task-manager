@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Laravel\Fortify\LoginViewResponse;
 
 
 class AuthenticatedSessionController extends Controller
 {
-    use LoginResponse;
 
     public function create()
     {
