@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Laravel\Fortify\Contracts\LoginViewResponse;
+use Laravel\Fortify\LoginViewResponse;
+use Laravel\Fortify\HandlesAuthenticationResponses;
+
 
 class AuthenticatedSessionController extends Controller
 {
-    use AuthenticatesUsers;
+    use HandlesAuthenticationResponses;
 
     public function create()
     {
