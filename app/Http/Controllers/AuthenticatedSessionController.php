@@ -8,7 +8,7 @@ use Laravel\Fortify\LoginViewResponse;
 
 class AuthenticatedSessionController extends Controller
 {
-    use HandlesAuthenticationResponses;
+    use LoginResponse;
 
     public function create()
     {
