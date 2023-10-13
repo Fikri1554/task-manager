@@ -17,3 +17,11 @@ use App\Http\Controllers\LayoutController;
 */
 
 Route::get('/', [LayoutController::class, 'index'])->name('home');
+
+// Rute untuk menampilkan formulir login dan menangani proses login
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login', [AuthenticatedSessionController::class, 'store']);
+
+// Rute untuk menampilkan formulir registrasi dan menangani proses registrasi
+Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+Route::post('/register', [RegisteredUserController::class, 'store']);
